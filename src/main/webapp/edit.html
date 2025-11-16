@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>edit</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .menu-item { padding: 8px 16px; font-size: 1.1rem; cursor: pointer; color: #333; }
+      .menu-item:hover { color: #0d6efd; }
+      .menu-item.active { color: #0d6efd; font-weight: 600; }
+    </style>
+
+</head>
+<body class="container mt-5">
+
+<header class="d-flex justify-content-center py-3 mb-4 border-bottom">
+<ul class="nav">
+  <li class="menu-item active">Home</li>
+  <li class="menu-item">New</li>
+  <li class="menu-item">Mac</li>
+  <li class="menu-item">iPad</li>
+  <li class="menu-item">iPhone</li>
+</ul>
+</header>
+<h2 class="mb-4">글 수정</h2>
+<form action="edit_ok.jsp" method="post" class="card p-4">
+  <input type="hidden" name="no" id="no">
+
+    <div class="mb-3">
+        <label class="form-label">title</label>
+        <input type="text" name="title" class="form-control" required>
+    </div>
+
+  <div class="mb-3">
+    <label class="form-label">writer</label>
+    <input type="text" name="writer" class="form-control" required>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">hit</label>
+    <input type="number" name="hit" class="form-control" required>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">created_date</label>
+    <input type="date" name="created_date" class="form-control" required>
+  </div>
+
+    <div class="mb-3">
+        <label class="form-label">content</label>
+        <textarea name="content" class="form-control" rows="4"></textarea>
+    </div>
+
+  <button type="submit" class="btn btn-primary">수정 저장</button>
+  <a href="list.jsp" class="btn btn-secondary">목록으로</a>
+
+</form>
+<script>
+  const pr=new URLSearchParams(location.search);
+  document.getElementById('no').value=pr.get('no')||'';
+</script>
+
+
+
+</body>
+</html>
