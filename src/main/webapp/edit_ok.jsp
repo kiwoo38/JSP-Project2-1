@@ -13,6 +13,7 @@
     String writer = request.getParameter("writer");
     String hitStr = request.getParameter("hit");
     String createdDate = request.getParameter("created_date");
+    String content =request.getParameter("content");
 
     int hit =0;
     try{
@@ -36,6 +37,9 @@
         <p><strong>작성자(writer):</strong> <%= writer %></p>
         <p><strong>조회수(hit):</strong> <%= hit %></p>
         <p><strong>작성일(created_date):</strong> <%= createdDate %></p>
+        <p><strong>내용(content):</strong><br>
+            <%= content %>
+        </p>
     </div>
 
     <a href="list.jsp" class="btn btn-primary">목록으로</a>
