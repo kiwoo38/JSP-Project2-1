@@ -20,6 +20,12 @@
     <meta charset="UTF-8">
     <title>글 저장 결과</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .menu-item { padding: 8px 16px; font-size: 1.1rem; cursor: pointer; color: #333; }
+        .menu-item:hover { color: #0d6efd; }
+        .menu-item.active { color: #0d6efd; font-weight: 600; }
+    </style>
+
 </head>
 <body class="container mt-5">
 
