@@ -40,6 +40,9 @@
             color: #0fd2c2;
             text-decoration: underline;
         }
+        .menu-item { padding: 8px 16px; font-size: 1.1rem; cursor: pointer; color: #333; }
+        .menu-item:hover { color: #0d6efd; }
+        .menu-item.active { color: #0d6efd; font-weight: 600; }
     </style>
 
 </head>
@@ -48,12 +51,12 @@
 <body class="container mt-5">
 
 <header class="d-flex justify-content-center py-3 mb-4 border-bottom">
-    <ul class="nav nav-pills">
-        <li class="nav-item px-3">Home</li>
-        <li class="nav-item px-3">New</li>
-        <li class="nav-item px-3">Mac</li>
-        <li class="nav-item px-3">iPad</li>
-        <li class="nav-item px-3">iPhone</li>
+    <ul class="nav">
+        <li class="menu-item active">Home</li>
+        <li class="menu-item">New</li>
+        <li class="menu-item">Mac</li>
+        <li class="menu-item">iPad</li>
+        <li class="menu-item">iPhone</li>
     </ul>
 </header>
 
