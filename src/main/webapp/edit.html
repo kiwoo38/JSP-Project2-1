@@ -27,6 +27,11 @@
 <form action="edit_ok.jsp" method="post" class="card p-4">
   <input type="hidden" name="no" id="no">
 
+    <div class="mb-3">
+        <label class="form-label">title</label>
+        <input type="text" name="title" class="form-control" required>
+    </div>
+
   <div class="mb-3">
     <label class="form-label">writer</label>
     <input type="text" name="writer" class="form-control" required>
@@ -43,7 +48,7 @@
   </div>
 
   <button type="submit" class="btn btn-primary">수정 저장</button>
-  <a href="list.jsp" class="btn btn-secnondary">목록으로</a>
+  <a href="list.jsp" class="btn btn-secondary">목록으로</a>
 
 </form>
 <script>
